@@ -6,7 +6,7 @@ ruby '2.5.3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.1'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+gem 'mysql2'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
@@ -60,3 +60,12 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'unicorn'
+
+gem 'spree', '~> 3.6.4'
+gem 'spree_auth_devise', '~> 3.3'
+gem 'spree_gateway', '~> 3.3'
+gem 'spree_frontend'
+gem 'spree_backend'
+gem 'spree_core'
